@@ -5,6 +5,23 @@ body {
     background-color: #f4f4f4;
 }
 
+header {
+    background-color: #f4f4f4;
+    color: #000000;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+}
+
 .container {
     max-width: 600px;
     margin: auto;
@@ -66,7 +83,7 @@ button:hover {
 }
 
 .submit-comment {
-    background-color: #0056b3;
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 8px 15px;
@@ -76,5 +93,5 @@ button:hover {
 }
 
 .submit-comment:hover {
-    background-color: #0091ff;
+    background-color: #0056b3;
 }
