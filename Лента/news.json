@@ -1,0 +1,32 @@
+loadNews()
+
+async function loadNews(){
+    const response = await fetch('news.json')
+
+    if (!response.ok){
+        console.log('Ошибка при загрузке json')
+    }
+
+    const News = await response.json()
+
+    const NewsFeed = document.getElementById('NewsFeed')
+
+    News.forEach(item => {
+        const NewNew = document.createElement('div')
+        NewNew.classname = 'NewNew'
+
+        const title = document.createElement('h3')
+        title.textContent = item.title
+        title.className = 'txt'
+        NewNew.appendChild(title)
+
+
+        const photo = document.createElement('img')
+        photo.src = item.phot
+        photo.className = 'phot'
+        NewNew.appendChild(photo)
+
+
+        const 
+    })
+}
